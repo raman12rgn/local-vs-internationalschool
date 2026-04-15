@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hearty Joyous Chough</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+
+      button {
+        background-color: transparent;
+      }
+
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+
+      button,
+      select {
+        text-transform: none;
+      }
+
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+        appearance: button;
+        color: inherit;
+      }
+
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      pre {
+        white-space: normal;
+      }
+
+      input {
+        padding: 2px 4px;
+      }
+
+      img {
+        display: block;
+      }
+
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+
+      [data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+
+      details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: "Open Sans";
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: undefined;
+        text-transform: undefined;
+        letter-spacing: 0.02em;
+        line-height: 1.6;
+        color: var(--color-on-surface);
+        background: var(--color-surface);
+
+        fill: var(--color-on-surface);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+  </head>
+  <body>
+    <link rel="stylesheet" href="style.css" />
+    <div>
+      <link href="footer.css" rel="stylesheet" />
+      <div class="footer-container1">
+        <footer class="footer-root">
+          <div class="footer-container">
+            <div class="footer-top-grid">
+              <div class="footer-brand-column">
+                <div class="footer-logo-wrapper">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="footer-brand-icon"
+                  >
+                    <path
+                      d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0zM22 10v6"
+                    ></path>
+                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                  </svg>
+                  <span class="footer-brand-name">EduScope Malaysia</span>
+                </div>
+                <p class="footer-brand-description section-content">
+                  Bridging the gap between Local and International education.
+                  Exploring the cultural, academic, and social landscapes of
+                  Malaysian schooling systems.
+                </p>
+                <div class="footer-social-links">
+                  <a href="#">
+                    <div aria-label="Facebook" class="footer-social-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div aria-label="Instagram" class="footer-social-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <rect
+                          width="20"
+                          height="20"
+                          x="2"
+                          y="2"
+                          rx="5"
+                          ry="5"
+                        ></rect>
+                        <path
+                          d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                        ></path>
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                      </svg>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div aria-label="LinkedIn" class="footer-social-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                        ></path>
+                        <rect width="4" height="12" x="2" y="9"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                      </svg>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div aria-label="YouTube" class="footer-social-btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 2-2 68.4 68.4 0 0 1 15 0 2 2 0 0 1 2 2 24.12 24.12 0 0 1 0 10 2 2 0 0 1-2 2 68.4 68.4 0 0 1-15 0 2 2 0 0 1-2-2z"
+                        ></path>
+                        <path d="m10 15 5-3-5-3z"></path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="footer-nav-column">
+                <h3 class="footer-column-title section-subtitle">
+                  Project Exploration
+                </h3>
+                <nav class="footer-nav-list">
+                  <a href="#">
+                    <div class="footer-nav-link">
+                      <span>Local vs International Schools</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-nav-link">
+                      <span>Cultural Foundations</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-nav-link">
+                      <span>Academic Freedom</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-nav-link">
+                      <span>Facility Comparison</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-nav-link">
+                      <span>Student Independence</span>
+                    </div>
+                  </a>
+                </nav>
+              </div>
+              <div class="footer-presentation-column">
+                <h3 class="footer-column-title section-subtitle">
+                  Canva Presentation
+                </h3>
+                <div class="footer-canva-placeholder">
+                  <div class="footer-canva-inner">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="footer-canva-icon"
+                    >
+                      <rect
+                        width="18"
+                        height="18"
+                        x="3"
+                        y="3"
+                        rx="2"
+                        ry="2"
+                      ></rect>
+                      <path d="M7 7h10v10H7z"></path>
+                      <path d="M12 7v10"></path>
+                      <path d="M7 12h10"></path>
+                    </svg>
+                    <p class="footer-canva-text">
+                      Interactive Presentation Slot
+                    </p>
+                    <button class="footer-canva-btn btn btn-sm btn-outline">
+                      <span>View Full Screen</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom-bar">
+              <div class="footer-legal-links">
+                <p class="footer-copyright">
+                  © 2026 EduScope Malaysia. Global Perspective Project.
+                </p>
+                <div class="footer-legal-group">
+                  <a href="#">
+                    <div class="footer-legal-link">
+                      <span>Privacy Policy</span>
+                    </div>
+                  </a>
+                  <a href="#">
+                    <div class="footer-legal-link">
+                      <span>Terms of Research</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="footer-status-tag">
+                <span class="footer-dot"></span>
+                <span class="footer-status-text">Academic Research Phase</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <div class="footer-container2">
+          <div class="footer-container3">
+            <style>
+                      @keyframes pulse {0% {transform: scale(0.95);
+              opacity: 0.8;}
+              50% {transform: scale(1.1);
+              opacity: 1;}
+              100% {transform: scale(0.95);
+              opacity: 0.8;}}
+            </style>
+          </div>
+        </div>
+        <div class="footer-container4">
+          <div class="footer-container5">
+            <script defer="" data-name="footer-interactions">
+              document.addEventListener('DOMContentLoaded', function() {
+                (function(){
+                  const footerIcons = document.querySelectorAll('.footer-social-btn');
+
+                  footerIcons.forEach(icon => {
+                    icon.addEventListener('mouseenter', () => {
+                      icon.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+                    });
+                  });
+
+                  const canvaPlaceholder = document.querySelector('.footer-canva-placeholder');
+                  if (canvaPlaceholder) {
+                    canvaPlaceholder.addEventListener('click', () => {
+                      console.log('Canva presentation integration triggered');
+                    });
+                  }
+                })()
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
